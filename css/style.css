@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap");
+:root {
+  --left-color: hsl(190, 84%, 20%);
+  --color-white: hsl(249, 2%, 100%);
+  --color-icon: hsl(190, 84%, 56%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(249deg, 2%, 84%);
+  min-height: 100vh;
+}
+body .container {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background: hsl(249deg, 2%, 100%);
+  max-width: 1000px;
+  display: grid;
+  margin: 50px;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+body .container .left-side {
+  position: relative;
+  background: var(--left-color);
+  padding: 40px;
+}
+body .container .left-side .profile-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+body .container .left-side .profile-text .img-box {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+body .container .left-side .profile-text .img-box img {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .container .left-side .profile-text h2 {
+  color: var(--color-white);
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+body .container .left-side .profile-text h2 span {
+  font-size: 0.7em;
+  font-weight: 300;
+}
+body .container .left-side .contact-info {
+  position: relative;
+  padding-top: 40px;
+}
+body .container .left-side .contact-info .title {
+  color: var(--color-white);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+body .container .left-side .contact-info ul {
+  position: relative;
+}
+body .container .left-side .contact-info ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+body .container .left-side .contact-info ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: var(--color-icon);
+}
+body .container .left-side .contact-info ul li .ci-link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-weight: 300;
+}
+body .container .left-side .contact-info ul li .text {
+  color: var(--color-white);
+  font-weight: 300;
+}
+body .container .left-side .contact-info.education li {
+  margin-bottom: 15px;
+}
+body .container .left-side .contact-info.education li h5 {
+  color: var(--color-icon);
+  font-weight: 500;
+}
+body .container .left-side .contact-info.education li h4 {
+  color: var(--color-white);
+  font-weight: 500;
+}
+body .container .left-side .contact-info.education li h4 .edu-link {
+  text-decoration: none;
+  color: var(--color-white);
+  opacity: 70%;
+}
+body .container .left-side .contact-info.lenguages .percent {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  background: hsl(190deg, 84%, 11%);
+  display: block;
+  margin-top: 5px;
+}
+body .container .left-side .contact-info.lenguages .percent div {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--color-icon);
+}
+body .container .right-side {
+  position: relative;
+  background: hsl(249deg, 2%, 100%);
+  padding: 40px;
+}/*# sourceMappingURL=style.css.map */
