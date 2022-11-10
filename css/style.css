@@ -3,6 +3,7 @@
   --left-color: hsl(190, 84%, 20%);
   --color-white: hsl(249, 2%, 100%);
   --color-icon: hsl(190, 84%, 56%);
+  --letter-right-color: hsl(0, 0%, 20%);
 }
 
 * {
@@ -90,7 +91,6 @@ body .container .left-side .contact-info ul li {
   position: relative;
   list-style: none;
   margin: 10px 0;
-  cursor: pointer;
 }
 body .container .left-side .contact-info ul li .icon {
   display: inline-block;
@@ -102,6 +102,9 @@ body .container .left-side .contact-info ul li .ci-link {
   text-decoration: none;
   color: var(--color-white);
   font-weight: 300;
+}
+body .container .left-side .contact-info ul li .ci-link:hover {
+  color: var(--color-icon);
 }
 body .container .left-side .contact-info ul li .text {
   color: var(--color-white);
@@ -123,6 +126,9 @@ body .container .left-side .contact-info.education li h4 .edu-link {
   color: var(--color-white);
   opacity: 70%;
 }
+body .container .left-side .contact-info.education li h4 .edu-link:hover {
+  color: var(--color-icon);
+}
 body .container .left-side .contact-info.lenguages .percent {
   position: relative;
   width: 100%;
@@ -142,4 +148,19 @@ body .container .right-side {
   position: relative;
   background: hsl(249deg, 2%, 100%);
   padding: 40px;
+}
+body .container .right-side .about {
+  margin-bottom: 50px;
+}
+body .container .right-side .about .title2 {
+  color: var(--left-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+body .container .right-side .about p {
+  color: var(--letter-right-color);
+}
+body .container .right-side .about p .negrita {
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
