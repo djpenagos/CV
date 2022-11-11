@@ -1,25 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
 
-:root{
+:root {
     --left-color: hsl(190, 84%, 20%);
     --color-white: hsl(249, 2%, 100%);
     --color-icon: hsl(190, 84%, 56%);
     --letter-right-color: hsl(0, 0%, 20%);
+    --h5-letter-color: hsl(200, 5%, 54%);
+    --h4-letter-color-blue: hsl(199, 59%, 40%);
+    --h4-letter-color-grey: hsl(217, 9%, 56%);
+    --percent-bg: hsl(0, 0%, 94%);
+    --percent-bg-check: hsl(199, 98%, 48%);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body{
+
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     background: hsl(249, 2%, 84%);
     min-height: 100vh;
-    .container{
+
+    .container {
         position: relative;
         width: 100%;
         min-height: 100px;
@@ -28,25 +35,29 @@ body{
         display: grid;
         margin: 50px;
         grid-template-columns: 1fr 2fr;
-        box-shadow: 0 35px 55px rgba(0,0,0,0.1);
-        .left-side{
-            position: relative;            
+        box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+
+        .left-side {
+            position: relative;
             background: var(--left-color);
             padding: 40px;
-            .profile-text{
+
+            .profile-text {
                 position: relative;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 padding-bottom: 20px;
-                border-bottom: 1px solid rgba(255,255,255,0.2);
-                .img-box{
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+                .img-box {
                     position: relative;
                     width: 180px;
                     height: 180px;
                     border-radius: 50%;
-                    overflow: hidden;                   
-                    img{
+                    overflow: hidden;
+
+                    img {
                         position: absolute;
                         top: 0;
                         left: 0px;
@@ -55,7 +66,8 @@ body{
                         object-fit: cover;
                     }
                 }
-                h2{
+
+                h2 {
                     color: var(--color-white);
                     font-size: 1.5em;
                     margin-top: 20px;
@@ -63,108 +75,229 @@ body{
                     text-align: center;
                     font-weight: 600;
                     line-height: 1.4em;
-                    span{
+
+                    span {
                         font-size: 0.7em;
                         font-weight: 300;
                     }
                 }
             }
-            .contact-info{
+
+            .contact-info {
                 position: relative;
                 padding-top: 40px;
-                .title{
+
+                .title {
                     color: var(--color-white);
                     text-transform: uppercase;
                     font-weight: 600;
                     letter-spacing: 1px;
                     margin-bottom: 20px;
                 }
-                ul{
+
+                ul {
                     position: relative;
-                    li{
+
+                    li {
                         position: relative;
                         list-style: none;
-                        margin: 10px 0;                        
-                        .icon{
+                        margin: 10px 0;
+
+                        .icon {
                             display: inline-block;
                             width: 30px;
-                           font-size: 18px;
-                           color: var(--color-icon);
+                            font-size: 18px;
+                            color: var(--color-icon);
                         }
-                        .ci-link{
-                            text-decoration: none;  
-                            color: var(--color-white);  
+
+                        .ci-link {
+                            text-decoration: none;
+                            color: var(--color-white);
                             font-weight: 300;
-                            &:hover{
-                                 color: var(--color-icon);                                
-                            }                        
+
+                            &:hover {
+                                color: var(--color-icon);
+                            }
                         }
-                        .text{
+
+                        .text {
                             color: var(--color-white);
                             font-weight: 300;
                         }
                     }
                 }
-                &.education{
-                    li{
+
+                &.education {
+                    li {
                         margin-bottom: 15px;
-                        h5{
+
+                        h5 {
                             color: var(--color-icon);
                             font-weight: 500;
                         }
-                        h4{
+
+                        h4 {
                             color: var(--color-white);
                             font-weight: 500;
-                            .edu-link{
+
+                            .edu-link {
                                 text-decoration: none;
                                 color: var(--color-white);
                                 opacity: 70%;
-                                &:hover{
-                                    color: var(--color-icon);                                
-                               } 
+
+                                &:hover {
+                                    color: var(--color-icon);
+                                }
                             }
                         }
-                        
+
                     }
                 }
-                &.lenguages{
-                    .percent{
+
+                &.lenguages {
+                    .percent {
                         position: relative;
                         width: 100%;
                         height: 8px;
-                        background: hsl(190, 84%, 11%);
+                        background: var(--percent-bg);
                         display: block;
                         margin-top: 5px;
-                        div{
+
+                        div {
                             position: absolute;
                             left: 0;
                             top: 0;
                             height: 100%;
-                            background: var(--color-icon) ;
+                            background: var(--color-icon);
                         }
                     }
                 }
             }
         }
-        .right-side{
+
+        .right-side {
             position: relative;
             background: hsl(249, 2%, 100%);
             padding: 40px;
-            .about{
+
+            .about {
                 margin-bottom: 50px;
-                .title2{
+
+                .title2 {
                     color: var(--left-color);
                     text-transform: uppercase;
                     letter-spacing: 1px;
                     margin-bottom: 10px;
                 }
-                p{
+
+                p {
                     color: var(--letter-right-color);
-                    .negrita{
+
+                    .negrita {
                         font-weight: 600;
                     }
                 }
+
+                .box {
+                    display: flex;
+                    flex-direction: row;
+                    margin: 20px 0;
+
+                    .year-company {
+                        min-width: 170px;
+
+                        h5 {
+                            text-transform: uppercase;
+                            color: var(--h5-letter-color);
+                            font-weight: 600;
+                            font-size: 16px;
+
+                            .exp-link {
+                                text-decoration: none;
+                                color: var(--h5-letter-color);
+                                font-weight: 600;
+
+                                &:hover {
+                                    color: var(--color-icon);
+                                }
+                            }
+                        }
+                    }
+
+                    .text h4 {
+                        text-transform: uppercase;
+                        color: var(--h4-letter-color-blue);
+                        font-size: 16px;
+                    }
+                }
+
+                &.skills .box {
+                    position: relative;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+
+                    h4 {
+                        text-transform: uppercase;
+                        color: var(--h4-letter-color-grey);
+                        font-weight: 500;
+                    }
+
+                    .percent-container {
+                        display: flex;
+
+                        .percent-radio {
+                            background: var(--percent-bg);
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            margin: 3px;
+                        }
+
+                        .percent-radio-check {
+                            background: var(--color-icon);
+                            width: 20px;
+                            height: 20px;
+                            border-radius: 50%;
+                            margin: 3px;
+                        }
+                    }
+                }
+
+                &.interest {
+                    position: relative;
+
+                    ul {
+                        display: flex;
+
+                        li {
+                            list-style: none;
+                            margin: 5px;
+
+                            i {
+                                margin-right: 5px;
+                                color: var(--color-icon);
+                            }
+                        }
+                    }
+                }
+            }
+        }        
+    }
+
+    @media (max-width: 1000px){
+
+        .container{
+            margin: 10px;
+            grid-template-columns: repeat(1,1fr);  
+            
+            &.right-side .about .interest ul{              
+                grid-template-columns: repeat(2,1fr);                
             }
         }
+        
     }
 }
+

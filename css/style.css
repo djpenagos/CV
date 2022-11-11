@@ -4,6 +4,11 @@
   --color-white: hsl(249, 2%, 100%);
   --color-icon: hsl(190, 84%, 56%);
   --letter-right-color: hsl(0, 0%, 20%);
+  --h5-letter-color: hsl(200, 5%, 54%);
+  --h4-letter-color-blue: hsl(199, 59%, 40%);
+  --h4-letter-color-grey: hsl(217, 9%, 56%);
+  --percent-bg: hsl(0, 0%, 94%);
+  --percent-bg-check: hsl(199, 98%, 48%);
 }
 
 * {
@@ -133,7 +138,7 @@ body .container .left-side .contact-info.lenguages .percent {
   position: relative;
   width: 100%;
   height: 8px;
-  background: hsl(190deg, 84%, 11%);
+  background: var(--percent-bg);
   display: block;
   margin-top: 5px;
 }
@@ -163,4 +168,84 @@ body .container .right-side .about p {
 }
 body .container .right-side .about p .negrita {
   font-weight: 600;
+}
+body .container .right-side .about .box {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+body .container .right-side .about .box .year-company {
+  min-width: 170px;
+}
+body .container .right-side .about .box .year-company h5 {
+  text-transform: uppercase;
+  color: var(--h5-letter-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+body .container .right-side .about .box .year-company h5 .exp-link {
+  text-decoration: none;
+  color: var(--h5-letter-color);
+  font-weight: 600;
+}
+body .container .right-side .about .box .year-company h5 .exp-link:hover {
+  color: var(--color-icon);
+}
+body .container .right-side .about .box .text h4 {
+  text-transform: uppercase;
+  color: var(--h4-letter-color-blue);
+  font-size: 16px;
+}
+body .container .right-side .about.skills .box {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+body .container .right-side .about.skills .box h4 {
+  text-transform: uppercase;
+  color: var(--h4-letter-color-grey);
+  font-weight: 500;
+}
+body .container .right-side .about.skills .box .percent-container {
+  display: flex;
+}
+body .container .right-side .about.skills .box .percent-container .percent-radio {
+  background: var(--percent-bg);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 3px;
+}
+body .container .right-side .about.skills .box .percent-container .percent-radio-check {
+  background: var(--color-icon);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 3px;
+}
+body .container .right-side .about.interest {
+  position: relative;
+}
+body .container .right-side .about.interest ul {
+  display: flex;
+}
+body .container .right-side .about.interest ul li {
+  list-style: none;
+  margin: 5px;
+}
+body .container .right-side .about.interest ul li i {
+  margin-right: 5px;
+  color: var(--color-icon);
+}
+@media (max-width: 1000px) {
+  body .container {
+    margin: 10px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body .container.right-side .about .interest ul {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
