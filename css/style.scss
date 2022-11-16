@@ -270,7 +270,8 @@ body {
                     position: relative;
 
                     ul {
-                        display: flex;
+                        display: grid;
+                        grid-template-columns: auto auto auto auto;
 
                         li {
                             list-style: none;
@@ -284,20 +285,34 @@ body {
                     }
                 }
             }
-        }        
+        }
     }
 
-    @media (max-width: 1000px){
+    @media (max-width: 1000px) {
 
-        .container{
+        .container {
             margin: 10px;
-            grid-template-columns: repeat(1,1fr);  
-            
-            &.right-side .about .interest ul{              
-                grid-template-columns: repeat(2,1fr);                
+            grid-template-columns: repeat(1, 1fr);
+
+            .right-side {
+                .about {
+                    .box {
+                        flex-direction: column;
+                        margin-bottom: 20px;
+
+                        .year-company {
+                            margin-bottom: 10px;
+                        }
+                    }
+
+                }
+
+                .about.interest {
+                    ul {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
+                }
             }
         }
-        
     }
 }
-

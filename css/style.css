@@ -230,7 +230,8 @@ body .container .right-side .about.interest {
   position: relative;
 }
 body .container .right-side .about.interest ul {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 body .container .right-side .about.interest ul li {
   list-style: none;
@@ -245,7 +246,14 @@ body .container .right-side .about.interest ul li i {
     margin: 10px;
     grid-template-columns: repeat(1, 1fr);
   }
-  body .container.right-side .about .interest ul {
+  body .container .right-side .about .box {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  body .container .right-side .about .box .year-company {
+    margin-bottom: 10px;
+  }
+  body .container .right-side .about.interest ul {
     grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=style.css.map */
