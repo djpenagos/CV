@@ -15,21 +15,21 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "system-ui", sans-serif;
 }
 
 body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: hsl(249deg, 2%, 84%);
+  background: hsl(249, 2%, 84%);
   min-height: 100vh;
 }
 body .container {
   position: relative;
   width: 100%;
   min-height: 100px;
-  background: hsl(249deg, 2%, 100%);
+  background: hsl(249, 2%, 100%);
   max-width: 1000px;
   display: grid;
   margin: 50px;
@@ -59,7 +59,7 @@ body .container .left-side .profile-text .img-box {
 body .container .left-side .profile-text .img-box img {
   position: absolute;
   top: 0;
-  left: 0px;
+  left: 0;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -151,7 +151,7 @@ body .container .left-side .contact-info.lenguages .percent div {
 }
 body .container .right-side {
   position: relative;
-  background: hsl(249deg, 2%, 100%);
+  background: hsl(249, 2%, 100%);
   padding: 40px;
 }
 body .container .right-side .about {
@@ -200,31 +200,19 @@ body .container .right-side .about.skills .box {
   position: relative;
   width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: stretch;
 }
-body .container .right-side .about.skills .box h4 {
-  text-transform: uppercase;
-  color: var(--h4-letter-color-grey);
-  font-weight: 500;
+body .container .right-side .about.skills .box .img-box {
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
-body .container .right-side .about.skills .box .percent-container {
-  display: flex;
-}
-body .container .right-side .about.skills .box .percent-container .percent-radio {
-  background: var(--percent-bg);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin: 3px;
-}
-body .container .right-side .about.skills .box .percent-container .percent-radio-check {
-  background: var(--color-icon);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  margin: 3px;
+body .container .right-side .about.skills .box .img-box img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 body .container .right-side .about.interest {
   position: relative;
